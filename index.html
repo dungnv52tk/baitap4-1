@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    let i, n;
+
+    function bangCuuChuong() {
+        document.write("<table border=1 width=100%>");
+        for (i = 1; i <= 9; i++) {
+            document.write("</tr>");
+            for (n = 2; n <= 9; n++)
+                document.write("<td>" + n + "x" + i + "=" + (n * i));
+        }
+        document.write("</tr></table>");
+    }
+
+    document.getElementById("demo").value = bangCuuChuong();
+</script>
+</body>
+</html>
